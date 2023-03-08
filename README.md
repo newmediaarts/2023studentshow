@@ -2,10 +2,10 @@
 A working repo for the NMA 2023 Student Show
 
 ## Coming Soon Page Drafts:
-* Coming Soon Draft 1 (need to create it and add a link to it)
+* Coming Soon Draft 1 (newmediaarts.github.io/2023studentshow/test01-comingsoon/index.html)
 
 ## Prototypes for the Final Site
-* FInal Site Draft #1 (need to create and add a link to it)
+* Final Site Draft #1 (need to create and add a link to it)
 
 ## Instructions
 * Git clone this repo to work on it locally
