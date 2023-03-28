@@ -114,3 +114,37 @@ section {
 .coming-soon {
     width: 65%;
 }
+
+  /* SOCIAL MEDIA ICONS */
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em 1.5em;
+    text-align: right;
+}
+
+.social-icons h2 {
+font-size: 1.5em;
+}
+
+.socialmedia {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.socialmedia li {
+display: inline-block;
+margin: 0 .3em;
+}
+
+.socialmedia svg {
+width: 20px;
+height: 20px;
+fill: rgb(252, 238, 168)
+}
+
+.socialmedia a:hover svg {
+    fill: rgb(255 255 255 / 1);
+}
