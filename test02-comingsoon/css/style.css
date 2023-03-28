@@ -1,0 +1,116 @@
+/* SIMPLE RESET */
+
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    margin: 0;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 87.5%; 
+    color: white;
+    line-height: 1.5;
+    background-color: rgb(65, 77, 77);
+}
+
+/* HEADINGS
+    Headings are based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16 */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em; 
+    /* 48px: 48/16 = 3em */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em; 
+    /* 36px: 36/16 = 2.25em */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em; 
+    /* 24px: 24/16 = 1.5em */
+    line-height: 1.2;
+}
+
+/* PARAGRAPHS */
+
+p {
+    margin: .5em 0;
+    max-width: 38em;
+}
+
+/* HELPER CLASSES */
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* LAYOUT */
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+/* TABLET-SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; /* 16px */ 
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; /* 18px */ 
+}
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* SEMANTIC GRID SYSTEM */
+
+/* SECTIONS */
+
+section {
+    padding: 3em 0;
+}
+
+/* HERO */
+
+.hero {
+    padding: 6em 4%;
+    background-color: rgb(65, 77, 77);
+    text-align: center;
+}
+.hero p {
+    max-width: 400px;
+}
+
+.coming-soon {
+    width: 65%;
+}
