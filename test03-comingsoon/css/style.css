@@ -108,6 +108,13 @@ section {
     padding: 3em 0;
 }
 
+/* STRUCTURE */
+.kccnma {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
 /* HERO */
 
 .hero {
