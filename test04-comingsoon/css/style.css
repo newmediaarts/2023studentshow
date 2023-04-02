@@ -1,5 +1,4 @@
 /* SIMPLE RESET */
-
 * { 
     box-sizing: border-box; 
 }
@@ -56,7 +55,6 @@ img {
     height: auto;
 }
 
-
 /* LAYOUT */
 
 
@@ -94,7 +92,7 @@ img {
 /* SECTIONS */
 
 section {
-    padding: 3em 0;
+    padding: 10em 0;
 }
 /* SITE HEADER */
 .site-header {
@@ -150,18 +148,59 @@ section {
     left:-9999px;
 }
 
+  /* NAVIGATION */
+
+@media (max-width:767px) {
+.site-footer ul {
+    /* display: block; */
+    padding: 0;
+    margin: 0;
+    }
+}
+
+.site-footer a:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* COMING SOON */
+.coming-soon {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
 /* HERO */
 .hero {
     padding: 6em 4%;
     background-color: rgb(65, 77, 77);
     text-align: center;
 }
+
 .hero p {
     max-width: 400px;
 }
 
-.coming-soon {
-    width: 65%;}
+.hero {
+    background-color:#ffbb99;
+    background-image:
+        radial-gradient(at 13% 94%, hsla(346,72%,61%,1) 0px, transparent 50%),
+        radial-gradient(at 65% 39%, hsla(30,65%,64%,1) 0px, transparent 50%),
+        radial-gradient(at 90% 61%, hsla(42,87%,66%,1) 0px, transparent 50%),
+        radial-gradient(at 56% 6%, hsla(166,72%,72%,1) 0px, transparent 50%),
+        radial-gradient(at 51% 90%, hsla(139,74%,73%,1) 0px, transparent 50%),
+        radial-gradient(at 40% 96%, hsla(330,93%,62%,1) 0px, transparent 50%);
+    /* background-color:hsla(331,73%,65%,1);
+    background-image:
+        radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%),
+        radial-gradient(at 71% 56%, hsla(357,79%,72%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(355,72%,62%,1) 0px, transparent 50%),
+        radial-gradient(at 7% 1%, hsla(340,75%,77%,1) 0px, transparent 50%),
+        radial-gradient(at 38% 48%, hsla(41,100%,62%,1) 0px, transparent 50%),
+        radial-gradient(at 51% 64%, hsla(60,65%,62%,1) 0px, transparent 50%);*/
+    min-height: 100vh;
+    display: grid;
+    place-items: center; 
+}
 
 .hero h1 {
     color: white;
@@ -177,10 +216,6 @@ section {
     text-align: right;
 }
 
-.social-icons h2 {
-    font-size: 1.5em;
-}
-
 .socialmedia {
     list-style: none;
     margin: 0;
@@ -191,14 +226,23 @@ section {
     display: inline-block;
     margin: 0 .3em;
 }
-
-.socialmedia svg {
-    width: 20px;
-    height: 20px;
-    fill: rgb(255 255 255 / 1);
+.fab {
+    color: white;
+    font-size:1.5vw;
+    text-decoration: none;
+}
+.fa-facebook-f:hover {
+    color: #1877F2;
 }
 
-.socialmedia a:hover svg {
-    fill: rgba(0,0,0,.5);
-    /* fill: rgb(252, 238, 168); */
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-youtube:hover {
+    color: #CD201F;
 }

@@ -192,13 +192,6 @@ section {
     background-color: rgba(0,0,0,.5);
 }
 
-/* STRUCTURE */
-.kccnma {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-}
-
 /* COMING SOON */
 .coming-soon {
     width: 100%;
@@ -309,10 +302,6 @@ section {
 .fa-youtube:hover {
     color: #CD201F;
 }
-.fa-tiktok:hover {
-    color: #00f2ea;
-}
-
 
 :root {
 	--depth: 500px;
@@ -337,7 +326,7 @@ html {
 body {
 	height: 100%;
 	overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 	background: hsl(0 0% 10%);
 	perspective: 1000px;
 	perspective-origin: 50% 35%;
