@@ -7,9 +7,12 @@ A working repo for the NMA 2023 Student Show
 * [Coming Soon Test 02](https://newmediaarts.github.io/2023studentshow/test02-comingsoon)
     -code clean up
 * [Coming Soon Test 03](https://newmediaarts.github.io/2023studentshow/test03-comingsoon)
-    -Lily is working on test03-comingsoon, if you would like to work on this too, please copy folder & rename to test05-comingsoon
+    -Lily is working on test03-comingsoon, if you would like to work on this too, please copy folder & rename to test06-comingsoon
 * [Coming Soon Test 04](https://newmediaarts.github.io/2023studentshow/test04-comingsoon)
     -revised draft test 02 — logos, gradient, social icons + code clean up
+* [Coming Soon Test 04](https://newmediaarts.github.io/2023studentshow/test05-comingsoon)
+    -revised draft test 02 — revised coming soon + fonts
+
 
 ## Prototypes for the Final Site
 * [Final Site Draft #1](https://newmediaarts.github.io/2023studentshow/test01-website) (need to create and add a link to it)
