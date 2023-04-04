@@ -1,13 +1,13 @@
 /* SIMPLE RESET */
-* { 
-    box-sizing: border-box; 
+* {
+    box-sizing: border-box;
 }
 
 /* TYPOGRAPHY */
 
 body {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 87.5%; 
+    font-size: 87.5%;
     color: white;
     line-height: 1.5;
     background-color: rgb(65, 77, 77);
@@ -18,24 +18,29 @@ body {
     Headings are based on a Traditional Typographic Scale
     48, 36, 24, 21, 18, 16 */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: .5em 0;
 }
 
 h1 {
-    font-size: 3em; 
+    font-size: 3em;
     /* 48px: 48/16 = 3em */
     line-height: 1;
 }
 
 h2 {
-    font-size: 2.25em; 
+    font-size: 2.25em;
     /* 36px: 36/16 = 2.25em */
     line-height: 1.1;
 }
 
 h3 {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     /* 24px: 24/16 = 1.5em */
     line-height: 1.2;
 }
@@ -69,19 +74,22 @@ img {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-/* TABLET-SIZED STYLING GOES HERE */
+    /* TABLET-SIZED STYLING GOES HERE */
 }
 
 @media (min-width: 1050px) {
     body {
-        font-size: 100%; /* 16px */ 
+        font-size: 100%;
+        /* 16px */
     }
 }
 
 @media (min-width: 1250px) {
     body {
-        font-size: 112.5%; /* 18px */ 
-}
+        font-size: 112.5%;
+        /* 18px */
+    }
+
     .container {
         max-width: 1200px;
     }
@@ -94,6 +102,7 @@ img {
 section {
     padding: 10em 0;
 }
+
 /* SITE HEADER */
 .site-header {
     width: 100%;
@@ -138,28 +147,28 @@ section {
     margin-top: .55em;
     position: absolute;
     top: -9999px;
-    left:-9999px;
+    left: -9999px;
 }
 
 .site-id h1 a {
     text-decoration: none;
     position: absolute;
     top: -9999px;
-    left:-9999px;
+    left: -9999px;
 }
 
-  /* NAVIGATION */
+/* NAVIGATION */
 
 @media (max-width:767px) {
-.site-footer ul {
-    /* display: block; */
-    padding: 0;
-    margin: 0;
+    .site-footer ul {
+        /* display: block; */
+        padding: 0;
+        margin: 0;
     }
 }
 
 .site-footer a:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 /* COMING SOON */
@@ -181,25 +190,17 @@ section {
 }
 
 .hero {
-    background-color:#ffbb99;
+    background-color: hsla(331, 73%, 65%, 1);
     background-image:
-        radial-gradient(at 13% 94%, hsla(346,72%,61%,1) 0px, transparent 50%),
-        radial-gradient(at 65% 39%, hsla(30,65%,64%,1) 0px, transparent 50%),
-        radial-gradient(at 90% 61%, hsla(42,87%,66%,1) 0px, transparent 50%),
-        radial-gradient(at 56% 6%, hsla(166,72%,72%,1) 0px, transparent 50%),
-        radial-gradient(at 51% 90%, hsla(139,74%,73%,1) 0px, transparent 50%),
-        radial-gradient(at 40% 96%, hsla(330,93%,62%,1) 0px, transparent 50%);
-    /* background-color:hsla(331,73%,65%,1);
-    background-image:
-        radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%),
-        radial-gradient(at 71% 56%, hsla(357,79%,72%,1) 0px, transparent 50%),
-        radial-gradient(at 80% 100%, hsla(355,72%,62%,1) 0px, transparent 50%),
-        radial-gradient(at 7% 1%, hsla(340,75%,77%,1) 0px, transparent 50%),
-        radial-gradient(at 38% 48%, hsla(41,100%,62%,1) 0px, transparent 50%),
-        radial-gradient(at 51% 64%, hsla(60,65%,62%,1) 0px, transparent 50%);*/
+        radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 71% 56%, hsla(357, 79%, 72%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(355, 72%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 1%, hsla(340, 75%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 38% 48%, hsla(41, 100%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 51% 64%, hsla(60, 65%, 62%, 1) 0px, transparent 50%);
     min-height: 100vh;
     display: grid;
-    place-items: center; 
+    place-items: center;
 }
 
 .hero h1 {
@@ -207,7 +208,7 @@ section {
     font-size: 10vw;
 }
 
-  /* SOCIAL MEDIA ICONS */
+/* SOCIAL MEDIA ICONS */
 .social-icons {
     position: absolute;
     bottom: 0;
@@ -226,11 +227,13 @@ section {
     display: inline-block;
     margin: 0 .3em;
 }
+
 .fab {
     color: white;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     text-decoration: none;
 }
+
 .fa-facebook-f:hover {
     color: #1877F2;
 }
