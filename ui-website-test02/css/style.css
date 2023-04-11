@@ -1,0 +1,525 @@
+/* SIMPLE RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    /* font-family: "lust", serif; */
+    font-size: 87.5%;
+    color: white;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.avant {
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+
+/* HEADINGS
+    Headings are based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16 */
+
+h1,
+h2,
+h3 {
+    margin: .5em 0;
+    font-family: "lust", serif;
+}
+
+h1 {
+    font-size: 3em;
+    /* 48px: 48/16 = 3em */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em;
+    /* 36px: 36/16 = 2.25em */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em;
+    /* 24px: 24/16 = 1.5em */
+    line-height: 1.2;
+}
+
+/* PARAGRAPHS */
+
+p {
+    margin: .5em 0;
+    max-width: 38em;
+}
+
+/* HELPER CLASSES */
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* LAYOUT */
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    /* TABLET-SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%;
+        /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%;
+        /* 18px */
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* SEMANTIC GRID SYSTEM */
+
+/* SECTIONS */
+
+section {
+    padding: 10em 0;
+}
+
+/* SITE HEADER */
+.site-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    color: white;
+}
+
+.site-header,
+.site-footer {
+    padding: 1.5em 1em 1em 1em;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-id {
+    display: flex;
+    justify-content: center;
+}
+
+.site-id .logo-kcc {
+    max-width: 35px;
+    margin-right: .5em;
+    margin-bottom: .75em;
+}
+
+.site-id .logo-nma {
+    max-width: 100px;
+    margin-right: .5em;
+    margin-bottom: .75em;
+}
+
+.site-id h1 {
+    font-size: 1.5em;
+    max-width: 100%;
+    margin-top: .55em;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.site-id h1 a {
+    text-decoration: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+  /* NAVIGATION */
+  .site-nav {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.site-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+.site-footer .site-nav ul {
+    /* display: block; */
+    padding: 0;
+    margin: 0;
+    }
+}
+
+.site-nav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    display: block;
+    padding: .8em 1em 1em 1em;
+    line-height: 1;
+    color: white;
+}
+
+.site-nav a:hover {
+    color: rgba(0,0,0,.8);
+}
+
+.site-footer .site-nav a:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+
+/* COMING SOON */
+
+
+/* HERO */
+.hero {
+    padding: 6em 4%;
+    /* background-color: rgb(65, 77, 77); */
+    text-align: center;
+    background-color: hsla(41, 100%, 50%, 1);
+    background-image:
+        radial-gradient(at 98% 0%, hsla(82, 87%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 14% 18%, hsla(209, 72%, 49%, 1) 0px, transparent 50%),
+        radial-gradient(at 86% 21%, hsla(60, 55%, 51%, 1) 0px, transparent 50%),
+        radial-gradient(at 73% 75%, hsla(354, 68%, 59%, 1) 0px, transparent 50%),
+        radial-gradient(at 85% 32%, hsla(337, 91%, 65%, 1) 0px, transparent 50%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-bottom: 6em;
+}
+
+.hero .coming-soon {
+    display: block;
+    width: 70vw;
+    /* height: 500px; */
+    height: 70vh;
+    object-fit: contain;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 10vw;
+}
+
+.hero p {
+    max-width: 400px;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em 1.5em;
+    text-align: right;
+    width: 100%;
+}
+
+.socialmedia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 767px) {
+    .socialmedia {
+        text-align: center;
+    }
+
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 .3em;
+}
+
+.fab {
+    color: white;
+    /* font-size: clamp(2em 1.5vw); */
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.fa-facebook-f:hover {
+    color: #1877F2;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-youtube:hover {
+    color: #CD201F;
+}
+
+
+/* .bg-video {
+	position: absolute;
+    top: 0;
+    left: 0;
+	height: 100%;
+	width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-video-content {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	opacity: 0.7;
+} */
+
+/* SECTIONS ---- STUDENTS */
+.student-names h2, .student-names p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.student-names p {
+    padding: .5em 0;
+    font-size: 1.7em;
+}
+  /* SOCIAL MEDIA ICONS */
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em 1.5em;
+    text-align: right;
+}
+
+.socialmedia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 .3em;
+}
+.fab {
+    color: white;
+    font-size:1.5vw;
+    text-decoration: none;
+}
+.fa-facebook-f:hover {
+    color: #1877F2;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-youtube:hover {
+    color: #CD201F;
+}
+
+:root {
+	--depth: 500px;
+	--turnLeft: 0.06turn;
+	--turnRight: -0.06turn;
+	--turn: var(--turnRight);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+	background: hsl(0 0% 10%);
+	perspective: 1000px;
+	perspective-origin: 50% 35%;
+}
+
+.room-container {
+	transform-style: preserve-3d;
+}
+
+.student-room {
+	position: relative;
+	border: 4vh solid hsl(0 0% 10%);
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: center;
+	transform-style: preserve-3d;
+}
+
+.student-room + .student-room {
+	border-top: 0;
+}
+
+.student-room::before,
+.student-room::after {
+	content: '';
+	position: absolute;
+	height: var(--depth);
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.student-room::before {
+	background:
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+		lightgray;
+	transform: rotatex(-90deg) scale(1.001);
+	transform-origin: center top;
+}
+
+/* FLOOR */
+.student-room::after {
+	bottom: 0;
+	background:
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+		url(https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80) center / cover,
+		sandybrown;
+	transform: rotatex(90deg);
+	transform-origin: center bottom;
+}
+
+/* CENTER WALL */
+.student-room-walls {
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
+		radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
+/* 		url(https://picsum.photos/1024/400) center / cover, */
+		darkgray;
+	transform: translatez(calc(var(--depth) * -1));
+	transform-style: preserve-3d;
+}
+
+.student-room-walls::before,
+.student-room-walls::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: var(--depth);
+}
+
+/* LEFT WALL */
+.student-room-walls::before {
+	right: 100%;
+	background:
+		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+/* 		url(https://picsum.photos/800/600) center / cover, */
+		gray;
+	transform: rotatey(90deg);
+	transform-origin: right center;
+}
+
+/* RIGHT WALL */
+.student-room-walls::after {
+	left: 100%;
+	background:
+		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+/* 		url(https://picsum.photos/600/800) center / cover, */
+		gray;
+	transform: rotatey(-90deg);
+	transform-origin: left center;
+}
+.student-room-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+/* 	font-size: clamp(1em, 20vmin, 8em); */
+	font-weight: 200;
+	text-align: center;
+	text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
+/* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
+}
+
+.student-room:nth-child(odd) > .room-content {
+	--turn: var(--turnLeft);
+}
+.student-name {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	padding: 1em;
+	order: 2;
+	max-width: 300px;
+/* 	font-size: clamp(1em, 2vw, 1.5em); */
+}
+
+.student-img-work:nth-child(2) {
+	order: 1;
+	max-width: 20%;
+}
+
+.student-img-work:nth-child(3) {
+	order: 3;
+	max-width: 30%;
+}
+
+.student-img-work img{
+	max-width: 100%;
+	height: auto;
+}

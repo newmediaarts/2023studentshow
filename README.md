@@ -27,6 +27,8 @@ A working repo for the NMA 2023 Student Show
 ## tests
 * [UI Website Test 01](https://newmediaarts.github.io/2023studentshow/ui-website-test01) 
    -WIP added nav, students, video
+* [UI Website Test 02](https://newmediaarts.github.io/2023studentshow/ui-website-test02) 
+   -WIP update video + gradient, added fonts  
 
 ## Instructions
 * Git clone this repo to work on it locally
