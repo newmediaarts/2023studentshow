@@ -4,9 +4,9 @@
 }
 
 /* TYPOGRAPHY */
-
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    /* font-family: "lust", serif; */
     font-size: 87.5%;
     color: white;
     line-height: 1.5;
