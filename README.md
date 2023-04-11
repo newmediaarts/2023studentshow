@@ -16,6 +16,9 @@ A working repo for the NMA 2023 Student Show
     -revised — fixed url, social media
 * [Coming Soon Test 07](https://newmediaarts.github.io/2023studentshow/test07-comingsoon)
     -revised — coming soon graphic + code clean up
+* [Coming Soon Test 08](https://newmediaarts.github.io/2023studentshow/test08-comingsoon)
+    -revised — gradient + coming soon graphic (working on it)
+
 
 
 ## Prototypes for the Final Site
