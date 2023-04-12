@@ -11,14 +11,32 @@ body {
     color: white;
     line-height: 1.5;
     margin: 0 auto;
-    background-color: hsla(41, 100%, 50%, 1);
+
+    background-color: #c799ff;
+    background-image:
+        radial-gradient(at 41% 31%, hsla(219, 87%, 64%, 1) 0px, transparent 50%),
+        /* mid-blue */
+        radial-gradient(at 59% 85%, hsla(219, 89%, 74%, 1) 0px, transparent 50%),
+        /* light-blue */
+        radial-gradient(at 72% 69%, hsla(350, 90%, 69%, 1) 0px, transparent 50%),
+        /* coral */
+        radial-gradient(at 19% 71%, hsla(39, 100%, 85%, 1) 0px, transparent 50%),
+        /* orange */
+        radial-gradient(at 58% 7%, hsla(234, 98%, 67%, 1) 0px, transparent 50%),
+        /* burple */
+        radial-gradient(at 29% 34%, hsla(208, 95%, 60%, 1) 0px, transparent 50%),
+        /* skyblue */
+        radial-gradient(at 92% 11%, hsla(173, 68%, 70%, 1) 0px, transparent 50%);
+    /* seagreen */
+    /* seagreen */
+    /* background-color: hsla(41, 100%, 50%, 1);
     background-image:
         radial-gradient(at 98% 0%, hsla(82, 87%, 69%, 1) 0px, transparent 50%),
         radial-gradient(at 14% 18%, hsla(209, 72%, 49%, 1) 0px, transparent 50%),
         radial-gradient(at 86% 21%, hsla(60, 55%, 51%, 1) 0px, transparent 50%),
         radial-gradient(at 73% 75%, hsla(354, 68%, 59%, 1) 0px, transparent 50%),
-        radial-gradient(at 85% 32%, hsla(337, 91%, 65%, 1) 0px, transparent 50%)
-        /* background-color: hsla(331, 73%, 65%, 1);
+        radial-gradient(at 85% 32%, hsla(337, 91%, 65%, 1) 0px, transparent 50%) */
+    /* background-color: hsla(331, 73%, 65%, 1);
     background-image:
         radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%),
         radial-gradient(at 71% 56%, hsla(357, 79%, 72%, 1) 0px, transparent 50%),
