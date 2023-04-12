@@ -24,7 +24,7 @@ A working repo for the NMA 2023 Student Show
 ## Prototypes for the Final Site
 * [Final Site Draft #1](https://newmediaarts.github.io/2023studentshow/final-site-draft-v1) (Lily)
 
-## tests
+## Tests
 * [UI Website Test 01](https://newmediaarts.github.io/2023studentshow/ui-website-test01) 
    -WIP added nav, students, video
 * [UI Website Test 02](https://newmediaarts.github.io/2023studentshow/ui-website-test02) 
