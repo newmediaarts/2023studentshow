@@ -56,9 +56,15 @@ p {
 /* HELPER CLASSES */
 
 /* IMAGES */
-img {
+img,
+video {
     max-width: 100%;
     height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    height: 100%;
 }
 
 /* LAYOUT */
@@ -160,11 +166,12 @@ section {
     left: -9999px;
 }
 
-  /* NAVIGATION */
-  .site-nav {
+/* NAVIGATION */
+.site-nav {
     font-size: 1.2em;
     font-weight: 700;
 }
+
 .site-nav ul {
     display: flex;
     justify-content: space-around;
@@ -174,10 +181,10 @@ section {
 }
 
 @media (max-width:767px) {
-.site-footer .site-nav ul {
-    /* display: block; */
-    padding: 0;
-    margin: 0;
+    .site-footer .site-nav ul {
+        /* display: block; */
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -196,11 +203,11 @@ section {
 }
 
 .site-nav a:hover {
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, .8);
 }
 
 .site-footer .site-nav a:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 
@@ -212,13 +219,16 @@ section {
     padding: 6em 4%;
     /* background-color: rgb(65, 77, 77); */
     text-align: center;
-    background-color: hsla(41, 100%, 50%, 1);
+    background-color: #c799ff;
     background-image:
-        radial-gradient(at 98% 0%, hsla(82, 87%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 14% 18%, hsla(209, 72%, 49%, 1) 0px, transparent 50%),
-        radial-gradient(at 86% 21%, hsla(60, 55%, 51%, 1) 0px, transparent 50%),
-        radial-gradient(at 73% 75%, hsla(354, 68%, 59%, 1) 0px, transparent 50%),
-        radial-gradient(at 85% 32%, hsla(337, 91%, 65%, 1) 0px, transparent 50%);
+        radial-gradient(at 41% 31%, hsla(219, 87%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 59% 85%, hsla(219, 89%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 92% 11%, hsla(350, 90%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 69%, hsla(105, 95%, 78%, 1) 0px, transparent 50%),
+        radial-gradient(at 58% 7%, hsla(234, 98%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 29% 34%, hsla(208, 95%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 19% 71%, hsla(173, 68%, 70%, 1) 0px, transparent 50%);
+
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -312,7 +322,8 @@ section {
 } */
 
 /* SECTIONS ---- STUDENTS */
-.student-names h2, .student-names p{
+.student-names h2,
+.student-names p {
     text-align: center;
     margin: 0 auto;
 }
@@ -321,7 +332,8 @@ section {
     padding: .5em 0;
     font-size: 1.7em;
 }
-  /* SOCIAL MEDIA ICONS */
+
+/* SOCIAL MEDIA ICONS */
 .social-icons {
     position: absolute;
     bottom: 0;
@@ -340,11 +352,13 @@ section {
     display: inline-block;
     margin: 0 .3em;
 }
+
 .fab {
     color: white;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     text-decoration: none;
 }
+
 .fa-facebook-f:hover {
     color: #1877F2;
 }
@@ -362,164 +376,166 @@ section {
 }
 
 :root {
-	--depth: 500px;
-	--turnLeft: 0.06turn;
-	--turnRight: -0.06turn;
-	--turn: var(--turnRight);
+    --depth: 500px;
+    --turnLeft: 0.06turn;
+    --turnRight: -0.06turn;
+    --turn: var(--turnRight);
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	height: 100%;
-	overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
-	height: 100%;
-	overflow-y: scroll;
+    height: 100%;
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
-	background: hsl(0 0% 10%);
-	perspective: 1000px;
-	perspective-origin: 50% 35%;
+    background: hsl(0 0% 10%);
+    perspective: 1000px;
+    perspective-origin: 50% 35%;
 }
 
 .room-container {
-	transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .student-room {
-	position: relative;
-	border: 4vh solid hsl(0 0% 10%);
-	height: 100vh;
-	width: 100vw;
-	scroll-snap-align: center;
-	transform-style: preserve-3d;
+    position: relative;
+    border: 4vh solid hsl(0 0% 10%);
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    transform-style: preserve-3d;
 }
 
-.student-room + .student-room {
-	border-top: 0;
+.student-room+.student-room {
+    border-top: 0;
 }
 
 .student-room::before,
 .student-room::after {
-	content: '';
-	position: absolute;
-	height: var(--depth);
-	width: 100%;
-	backface-visibility: hidden;
+    content: '';
+    position: absolute;
+    height: var(--depth);
+    width: 100%;
+    backface-visibility: hidden;
 }
 
 .student-room::before {
-	background:
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-		lightgray;
-	transform: rotatex(-90deg) scale(1.001);
-	transform-origin: center top;
+    background:
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        lightgray;
+    transform: rotatex(-90deg) scale(1.001);
+    transform-origin: center top;
 }
 
 /* FLOOR */
 .student-room::after {
-	bottom: 0;
-	background:
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-		url(https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80) center / cover,
-		sandybrown;
-	transform: rotatex(90deg);
-	transform-origin: center bottom;
+    bottom: 0;
+    background:
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        url(https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80) center / cover,
+        sandybrown;
+    transform: rotatex(90deg);
+    transform-origin: center bottom;
 }
 
 /* CENTER WALL */
 .student-room-walls {
-	position: absolute;
-	inset: 0;
-	background:
-		linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
-		radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
-/* 		url(https://picsum.photos/1024/400) center / cover, */
-		darkgray;
-	transform: translatez(calc(var(--depth) * -1));
-	transform-style: preserve-3d;
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
+        /* 		url(https://picsum.photos/1024/400) center / cover, */
+        darkgray;
+    transform: translatez(calc(var(--depth) * -1));
+    transform-style: preserve-3d;
 }
 
 .student-room-walls::before,
 .student-room-walls::after {
-	content: '';
-	position: absolute;
-	height: 100%;
-	width: var(--depth);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--depth);
 }
 
 /* LEFT WALL */
 .student-room-walls::before {
-	right: 100%;
-	background:
-		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-/* 		url(https://picsum.photos/800/600) center / cover, */
-		gray;
-	transform: rotatey(90deg);
-	transform-origin: right center;
+    right: 100%;
+    background:
+        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        /* 		url(https://picsum.photos/800/600) center / cover, */
+        gray;
+    transform: rotatey(90deg);
+    transform-origin: right center;
 }
 
 /* RIGHT WALL */
 .student-room-walls::after {
-	left: 100%;
-	background:
-		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-/* 		url(https://picsum.photos/600/800) center / cover, */
-		gray;
-	transform: rotatey(-90deg);
-	transform-origin: left center;
-}
-.student-room-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 80%;
-	margin: 0 auto;
-	color: white;
-/* 	font-size: clamp(1em, 20vmin, 8em); */
-	font-weight: 200;
-	text-align: center;
-	text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
-/* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
+    left: 100%;
+    background:
+        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        /* 		url(https://picsum.photos/600/800) center / cover, */
+        gray;
+    transform: rotatey(-90deg);
+    transform-origin: left center;
 }
 
-.student-room:nth-child(odd) > .room-content {
-	--turn: var(--turnLeft);
+.student-room-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    /* 	font-size: clamp(1em, 20vmin, 8em); */
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
+    /* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
 }
+
+.student-room:nth-child(odd)>.room-content {
+    --turn: var(--turnLeft);
+}
+
 .student-name {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: left;
-	padding: 1em;
-	order: 2;
-	max-width: 300px;
-/* 	font-size: clamp(1em, 2vw, 1.5em); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 1em;
+    order: 2;
+    max-width: 300px;
+    /* 	font-size: clamp(1em, 2vw, 1.5em); */
 }
 
 .student-img-work:nth-child(2) {
-	order: 1;
-	max-width: 20%;
+    order: 1;
+    max-width: 20%;
 }
 
 .student-img-work:nth-child(3) {
-	order: 3;
-	max-width: 30%;
+    order: 3;
+    max-width: 30%;
 }
 
-.student-img-work img{
-	max-width: 100%;
-	height: auto;
+.student-img-work img {
+    max-width: 100%;
+    height: auto;
 }
