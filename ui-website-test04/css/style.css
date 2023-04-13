@@ -14,18 +14,19 @@
     margin: 0;
     padding: 0;
 }
+
 html {
-	height: 100%;
-	overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
-	height: 100vh;
-	overflow-y: scroll;
-	/* scroll-snap-type: y mandatory; */
-	background: hsl(0 0% 10%);
-	perspective: 2000px;
-	perspective-origin: 50% 35%;
+    height: 100vh;
+    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory; */
+    background: hsl(0 0% 10%);
+    perspective: 2000px;
+    perspective-origin: 50% 35%;
 }
 
 /* TYPOGRAPHY */
@@ -36,11 +37,14 @@ body {
     color: white;
     line-height: 1.5;
     margin: 0 auto;
-    background-color:  hsl(0 0% 10%);;
+    background-color: hsl(0 0% 10%);
+    ;
 }
 
 .avant {
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-size: .7em;
+    /* border: 5px solid red; */
 }
 
 /* HEADINGS
@@ -233,9 +237,9 @@ iframe {
 /* SECTIONS */
 
 #graduates {
-	position: relative;
-	width: 100%;
-	padding: 10em 0;
+    position: relative;
+    width: 100%;
+    padding: 10em 0;
     background-color: hsl(0 0% 10%);
     z-index: 100;
 }
@@ -248,15 +252,23 @@ iframe {
     padding: 5em 4%;
     /* background-color: rgb(65, 77, 77); */
     text-align: center;
+    background-color: hsla(208, 95%, 60%, 1);
     /* background-color: #c799ff; */
     background-image:
         radial-gradient(at 41% 31%, hsla(219, 87%, 64%, 1) 0px, transparent 50%),
+        /* mid-blue */
         radial-gradient(at 59% 85%, hsla(219, 89%, 74%, 1) 0px, transparent 50%),
-        radial-gradient(at 92% 11%, hsla(350, 90%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 72% 69%, hsla(105, 95%, 78%, 1) 0px, transparent 50%),
+        /* light-blue */
+        radial-gradient(at 72% 69%, hsla(350, 90%, 69%, 1) 0px, transparent 50%),
+        /* coral */
+        radial-gradient(at 92% 11%, hsla(35, 100%, 60%, 1) 0px, transparent 50%),
+        /* green */
         radial-gradient(at 58% 7%, hsla(234, 98%, 67%, 1) 0px, transparent 50%),
+        /* burple */
         radial-gradient(at 29% 34%, hsla(208, 95%, 60%, 1) 0px, transparent 50%),
-        radial-gradient(at 19% 71%, hsla(173, 68%, 70%, 1) 0px, transparent 50%);
+        /* skyblue */
+        radial-gradient(at 29% 78%, hsla(173, 68%, 70%, 1) 0px, transparent 50%);
+    /* seagreen */
 
     min-height: 100vh;
     display: grid;
@@ -272,6 +284,32 @@ iframe {
 
 .hero p {
     max-width: 400px;
+}
+
+.student-names h2,
+.student-names p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3em;
+}
+
+.student-names p {
+    padding: .5em 0;
+    font-size: 1.7em;
+}
+
+.student-names a {
+    color: #00acee;
+    text-decoration: none;
+}
+
+.student-names a:hover {
+    color: #ffa700;
+    font-weight: bold;
+}
+
+.student-names a:linked {
+    color: #069;
 }
 
 /* SOCIAL MEDIA ICONS */
@@ -326,136 +364,138 @@ iframe {
 }
 
 .room-container {
-	transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .student-room {
-	position: relative;
-	border-top: 4vh solid hsl(0 0% 10%);
-	border-bottom: 4vh solid hsl(0 0% 10%);
-	height: 100vh;
-	width: 100vw;
-	scroll-snap-align: center;
-	transform-style: preserve-3d;
+    position: relative;
+    border-top: 4vh solid hsl(0 0% 10%);
+    border-bottom: 4vh solid hsl(0 0% 10%);
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    transform-style: preserve-3d;
 }
 
-.student-room + .student-room {
-	border-top: 0;
+.student-room+.student-room {
+    border-top: 0;
 }
 
 .student-room::before,
 .student-room::after {
-	content: '';
-	position: absolute;
-	height: var(--depth);
-	width: 100%;
-	backface-visibility: hidden;
+    content: '';
+    position: absolute;
+    height: var(--depth);
+    width: 100%;
+    backface-visibility: hidden;
 }
 
 .student-room::before {
-	background:
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-		lightgray;
-	transform: rotatex(-90deg) scale(1.001);
-	transform-origin: center top;
+    background:
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        lightgray;
+    transform: rotatex(-90deg) scale(1.001);
+    transform-origin: center top;
 }
 
 /* FLOOR */
 .student-room::after {
-	bottom: 0;
-	background:
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-		url(../img/megan-illustrated-floor.jpg) center / cover,
-		sandybrown;
-	transform: rotatex(90deg);
-	transform-origin: center bottom;
+    bottom: 0;
+    background:
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        url(../img/megan-illustrated-floor.jpg) center / cover,
+        sandybrown;
+    transform: rotatex(90deg);
+    transform-origin: center bottom;
 }
 
 /* CENTER WALL */
 .student-room-walls {
-	position: absolute;
-	inset: 0;
-	background:
-		linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
-		radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
-/* 		url(https://picsum.photos/1024/400) center / cover, */
-		darkgray;
-	transform: translatez(calc(var(--depth) * -1));
-	transform-style: preserve-3d;
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
+        /* 		url(https://picsum.photos/1024/400) center / cover, */
+        darkgray;
+    transform: translatez(calc(var(--depth) * -1));
+    transform-style: preserve-3d;
 }
 
 .student-room-walls::before,
 .student-room-walls::after {
-	content: '';
-	position: absolute;
-	height: 100%;
-	width: var(--depth);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--depth);
 }
 
 /* LEFT WALL */
 .student-room-walls::before {
-	right: 100%;
-	background:
-		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-/* 		url(https://picsum.photos/800/600) center / cover, */
-		gray;
-	transform: rotatey(90deg);
-	transform-origin: right center;
+    right: 100%;
+    background:
+        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        /* 		url(https://picsum.photos/800/600) center / cover, */
+        gray;
+    transform: rotatey(90deg);
+    transform-origin: right center;
 }
 
 /* RIGHT WALL */
 .student-room-walls::after {
-	left: 100%;
-	background:
-		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
-		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-/* 		url(https://picsum.photos/600/800) center / cover, */
-		gray;
-	transform: rotatey(-90deg);
-	transform-origin: left center;
-}
-.student-room-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 80%;
-	margin: 0 auto;
-	color: white;
-/* 	font-size: clamp(1em, 20vmin, 8em); */
-	font-weight: 200;
-	text-align: center;
-	text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
-/* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
+    left: 100%;
+    background:
+        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        /* 		url(https://picsum.photos/600/800) center / cover, */
+        gray;
+    transform: rotatey(-90deg);
+    transform-origin: left center;
 }
 
-.student-room:nth-child(odd) > .room-content {
-	--turn: var(--turnLeft);
+.student-room-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    /* 	font-size: clamp(1em, 20vmin, 8em); */
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
+    /* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
 }
+
+.student-room:nth-child(odd)>.room-content {
+    --turn: var(--turnLeft);
+}
+
 .student-name {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: left;
-	padding: 1em;
-	order: 2;
-	max-width: 300px;
-/* 	font-size: clamp(1em, 2vw, 1.5em); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 1em;
+    order: 2;
+    max-width: 300px;
+    /* 	font-size: clamp(1em, 2vw, 1.5em); */
 }
 
 .student-img-work:nth-child(2) {
-	order: 1;
-	max-width: 20%;
+    order: 1;
+    max-width: 20%;
 }
 
 .student-img-work:nth-child(3) {
-	order: 3;
-	max-width: 30%;
+    order: 3;
+    max-width: 30%;
 }
 
-.student-img-work img{
-	max-width: 100%;
-	height: auto;
+.student-img-work img {
+    max-width: 100%;
+    height: auto;
 }
