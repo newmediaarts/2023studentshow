@@ -1,9 +1,9 @@
 /* CSS VARIABLES */
 :root {
-    --depth: 500px;
-    --turnLeft: 0.06turn;
+    --depth: 800px;
+    /* --turnLeft: 0.06turn;
     --turnRight: -0.06turn;
-    --turn: var(--turnRight);
+    --turn: var(--turnRight); */
 }
 
 /* GLOBAL RESET */
@@ -23,10 +23,10 @@ html {
 body {
     height: 100vh;
     overflow-y: scroll;
-    /* scroll-snap-type: y mandatory; */
-    background: hsl(0 0% 10%);
     perspective: 2000px;
     perspective-origin: 50% 35%;
+    /* scroll-snap-type: y mandatory; */
+    /* background: hsl(0 0% 10%); */
 }
 
 /* TYPOGRAPHY */
@@ -240,9 +240,18 @@ iframe {
     position: relative;
     width: 100%;
     padding: 10em 0;
-    background-color: hsl(0 0% 10%);
+    /* background: red; */
+    background-color: teal;
+    /* background-color: hsl(0 0% 10%);
+    z-index: 100; */
+}
+
+.studentlist {
+    background-color: teal;
+    /* background-color: hsl(0 0% 10%); */
     z-index: 100;
 }
+
 
 /* FINAL SITE */
 
@@ -295,7 +304,7 @@ iframe {
 
 .student-names p {
     padding: .5em 0;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .student-names a {
@@ -373,8 +382,9 @@ iframe {
     border-bottom: 4vh solid hsl(0 0% 10%);
     height: 100vh;
     width: 100vw;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     transform-style: preserve-3d;
+    /* overflow-y: hidden; */
 }
 
 .student-room+.student-room {
