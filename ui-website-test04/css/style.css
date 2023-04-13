@@ -1,0 +1,461 @@
+/* CSS VARIABLES */
+:root {
+    --depth: 500px;
+    --turnLeft: 0.06turn;
+    --turnRight: -0.06turn;
+    --turn: var(--turnRight);
+}
+
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100vh;
+	overflow-y: scroll;
+	/* scroll-snap-type: y mandatory; */
+	background: hsl(0 0% 10%);
+	perspective: 2000px;
+	perspective-origin: 50% 35%;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    /* font-family: "lust", serif; */
+    font-size: 87.5%;
+    color: white;
+    line-height: 1.5;
+    margin: 0 auto;
+    background-color:  hsl(0 0% 10%);;
+}
+
+.avant {
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+
+/* HEADINGS
+    Headings are based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16 */
+
+h1,
+h2,
+h3 {
+    margin: .5em 0;
+    font-family: "lust", serif;
+}
+
+h1 {
+    font-size: 3em;
+    /* 48px: 48/16 = 3em */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em;
+    /* 36px: 36/16 = 2.25em */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em;
+    /* 24px: 24/16 = 1.5em */
+    line-height: 1.2;
+}
+
+/* PARAGRAPHS */
+
+p {
+    margin: .5em 0;
+    max-width: 38em;
+}
+
+/* SITE HEADER */
+.site-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    color: white;
+}
+
+.site-header,
+.site-footer {
+    padding: 1.5em 1em 1em 1em;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-id {
+    display: flex;
+    justify-content: center;
+}
+
+.site-id .logo-kcc {
+    max-width: 35px;
+    margin-right: .5em;
+    margin-bottom: .75em;
+}
+
+.site-id .logo-nma {
+    max-width: 100px;
+    margin-right: .5em;
+    margin-bottom: .75em;
+}
+
+.site-id h1 {
+    font-size: 1.5em;
+    max-width: 100%;
+    margin-top: .55em;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.site-id h1 a {
+    text-decoration: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* NAVIGATION */
+.site-nav {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+    .site-footer .site-nav ul {
+        /* display: block; */
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.site-nav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    display: block;
+    padding: .8em 1em 1em 1em;
+    line-height: 1;
+    color: white;
+}
+
+.site-nav a:hover {
+    color: rgba(0, 0, 0, .8);
+}
+
+.site-footer .site-nav a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* HELPER CLASSES */
+
+/* IMAGES */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* LAYOUT */
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    /* TABLET-SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%;
+        /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%;
+        /* 18px */
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* SEMANTIC GRID SYSTEM */
+
+/* SECTIONS */
+
+#graduates {
+	position: relative;
+	width: 100%;
+	padding: 10em 0;
+    background-color: hsl(0 0% 10%);
+    z-index: 100;
+}
+
+/* FINAL SITE */
+
+
+/* HERO */
+.hero {
+    padding: 5em 4%;
+    /* background-color: rgb(65, 77, 77); */
+    text-align: center;
+    /* background-color: #c799ff; */
+    background-image:
+        radial-gradient(at 41% 31%, hsla(219, 87%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 59% 85%, hsla(219, 89%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 92% 11%, hsla(350, 90%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 69%, hsla(105, 95%, 78%, 1) 0px, transparent 50%),
+        radial-gradient(at 58% 7%, hsla(234, 98%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 29% 34%, hsla(208, 95%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 19% 71%, hsla(173, 68%, 70%, 1) 0px, transparent 50%);
+
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-bottom: 6em;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 10vw;
+}
+
+.hero p {
+    max-width: 400px;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    padding: 1em 1.5em;
+    text-align: right;
+    width: 100%;
+}
+
+.socialmedia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 767px) {
+    .socialmedia {
+        text-align: center;
+    }
+
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 .3em;
+}
+
+.fab {
+    color: white;
+    /* font-size: clamp(2em 1.5vw); */
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.fa-facebook-f:hover {
+    color: #1877F2;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-youtube:hover {
+    color: #CD201F;
+}
+
+.room-container {
+	transform-style: preserve-3d;
+}
+
+.student-room {
+	position: relative;
+	border-top: 4vh solid hsl(0 0% 10%);
+	border-bottom: 4vh solid hsl(0 0% 10%);
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: center;
+	transform-style: preserve-3d;
+}
+
+.student-room + .student-room {
+	border-top: 0;
+}
+
+.student-room::before,
+.student-room::after {
+	content: '';
+	position: absolute;
+	height: var(--depth);
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.student-room::before {
+	background:
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+		lightgray;
+	transform: rotatex(-90deg) scale(1.001);
+	transform-origin: center top;
+}
+
+/* FLOOR */
+.student-room::after {
+	bottom: 0;
+	background:
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+		url(../img/megan-illustrated-floor.jpg) center / cover,
+		sandybrown;
+	transform: rotatex(90deg);
+	transform-origin: center bottom;
+}
+
+/* CENTER WALL */
+.student-room-walls {
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
+		radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
+/* 		url(https://picsum.photos/1024/400) center / cover, */
+		darkgray;
+	transform: translatez(calc(var(--depth) * -1));
+	transform-style: preserve-3d;
+}
+
+.student-room-walls::before,
+.student-room-walls::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: var(--depth);
+}
+
+/* LEFT WALL */
+.student-room-walls::before {
+	right: 100%;
+	background:
+		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+/* 		url(https://picsum.photos/800/600) center / cover, */
+		gray;
+	transform: rotatey(90deg);
+	transform-origin: right center;
+}
+
+/* RIGHT WALL */
+.student-room-walls::after {
+	left: 100%;
+	background:
+		linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+		radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+/* 		url(https://picsum.photos/600/800) center / cover, */
+		gray;
+	transform: rotatey(-90deg);
+	transform-origin: left center;
+}
+.student-room-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+/* 	font-size: clamp(1em, 20vmin, 8em); */
+	font-weight: 200;
+	text-align: center;
+	text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
+/* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
+}
+
+.student-room:nth-child(odd) > .room-content {
+	--turn: var(--turnLeft);
+}
+.student-name {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	padding: 1em;
+	order: 2;
+	max-width: 300px;
+/* 	font-size: clamp(1em, 2vw, 1.5em); */
+}
+
+.student-img-work:nth-child(2) {
+	order: 1;
+	max-width: 20%;
+}
+
+.student-img-work:nth-child(3) {
+	order: 3;
+	max-width: 30%;
+}
+
+.student-img-work img{
+	max-width: 100%;
+	height: auto;
+}

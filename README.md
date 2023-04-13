@@ -30,6 +30,8 @@ A working repo for the NMA 2023 Student Show
    -WIP update video + gradient, added fonts  
 * [UI Website Test 03](https://newmediaarts.github.io/2023studentshow/ui-website-test03) 
    -Chris doing 15min of live coding on 4/12 - EPIC FAIL! HELP ME!
+* [UI Website Test 04](https://newmediaarts.github.io/2023studentshow/ui-website-test04) 
+   -needs a roof + added floor 
 
 ## Instructions
 * Git clone this repo to work on it locally
