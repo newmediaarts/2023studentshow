@@ -1,6 +1,6 @@
 /* CSS VARIABLES */
 :root {
-    --depth: 800px;
+    --roomdepth: 800px;
     /* --turnLeft: 0.06turn;
     --turnRight: -0.06turn;
     --turn: var(--turnRight); */
@@ -406,7 +406,7 @@ iframe {
 .student-room::after {
     content: '';
     position: absolute;
-    height: var(--depth);
+    height: var(--roomdepth);
     width: 100%;
     backface-visibility: hidden;
 }
@@ -439,7 +439,7 @@ iframe {
         radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
         /* 		url(https://picsum.photos/1024/400) center / cover, */
         darkgray;
-    transform: translatez(calc(var(--depth) * -1));
+    transform: translatez(calc(var(--roomdepth) * -1));
     transform-style: preserve-3d;
 }
 
@@ -448,7 +448,7 @@ iframe {
     content: '';
     position: absolute;
     height: 100%;
-    width: var(--depth);
+    width: var(--roomdepth);
 }
 
 /* LEFT WALL */
@@ -488,7 +488,7 @@ iframe {
     font-weight: 200;
     text-align: center;
     text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
-    /* 	transform: translatez(calc(var(--depth) / -2)) rotatey(var(--turn)); */
+    /* 	transform: translatez(calc(var(--roomdepth) / -2)) rotatey(var(--turn)); */
 }
 
 .student-room:nth-child(odd)>.room-content {
