@@ -302,6 +302,12 @@ iframe {
     font-size: 3em;
 }
 
+@media (max-width: 767px) {
+    .student-names p {
+        font-size: 1em;
+    }
+}
+
 .student-names p {
     padding: .5em 0;
     font-size: 1.5em;
