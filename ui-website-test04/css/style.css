@@ -295,7 +295,7 @@ iframe {
     max-width: 400px;
 }
 
-/* .student-names h2,
+.student-names h2,
 .student-names p {
     text-align: center;
     margin: 0 auto;
@@ -316,7 +316,7 @@ iframe {
 .student-names p {
     padding: .5em 0;
     font-size: 1.5em;
-} */
+}
 
 .student-names a {
     color: #00acee;
