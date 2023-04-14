@@ -306,6 +306,10 @@ iframe {
     .student-names p {
         font-size: .7em;
     }
+
+    .red {
+        font-size: .5em;
+    }
 }
 
 .student-names p {
