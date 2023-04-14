@@ -309,6 +309,7 @@ iframe {
 
     .red {
         font-size: .5em;
+        border: 1px solid orange;
     }
 }
 
