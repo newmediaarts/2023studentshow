@@ -18,6 +18,8 @@ A working repo for the NMA 2023 Student Show
     -revised — coming soon graphic + code clean up
 * [Coming Soon Test 08](https://newmediaarts.github.io/2023studentshow/test08-comingsoon)
     -revised — gradient + coming soon graphic
+* [Coming Soon Test 09](https://newmediaarts.github.io/2023studentshow/test09-comingsoon)
+    -revised — FINAL
 
 
 ## Prototypes and Tests for the Final Site
@@ -32,7 +34,7 @@ A working repo for the NMA 2023 Student Show
 * [UI Website Test 04](https://newmediaarts.github.io/2023studentshow/ui-website-test04) 
    -needs a roof + added floor 
 * [UI Website Test 05](https://newmediaarts.github.io/2023studentshow/ui-website-test05) 
-   -OMG backup
+   -OMG the backup
 
 ## Instructions
 * Git clone this repo to work on it locally
