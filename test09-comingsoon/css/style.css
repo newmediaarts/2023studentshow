@@ -1,0 +1,278 @@
+/* SIMPLE RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    /* font-family: "lust", serif; */
+    font-size: 87.5%;
+    color: white;
+    line-height: 1.5;
+    margin: 0 auto;
+
+    background-color: hsla(208, 95%, 60%, 1);
+    /* background-color: #c799ff; */
+    background-image:
+        radial-gradient(at 41% 31%, hsla(219, 87%, 64%, 1) 0px, transparent 50%),
+        /* mid-blue */
+        radial-gradient(at 59% 85%, hsla(219, 89%, 74%, 1) 0px, transparent 50%),
+        /* light-blue */
+        radial-gradient(at 72% 69%, hsla(350, 90%, 69%, 1) 0px, transparent 50%),
+        /* coral */
+        radial-gradient(at 92% 11%, hsla(35, 100%, 60%, 1) 0px, transparent 50%),
+        /* green */
+        radial-gradient(at 58% 7%, hsla(234, 98%, 67%, 1) 0px, transparent 50%),
+        /* burple */
+        radial-gradient(at 29% 34%, hsla(208, 95%, 60%, 1) 0px, transparent 50%),
+        /* skyblue */
+        radial-gradient(at 29% 78%, hsla(173, 68%, 70%, 1) 0px, transparent 50%);
+    /* seagreen */
+}
+
+/* HEADINGS
+    Headings are based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16 */
+
+h1,
+h2,
+h3 {
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em;
+    /* 48px: 48/16 = 3em */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em;
+    /* 36px: 36/16 = 2.25em */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em;
+    /* 24px: 24/16 = 1.5em */
+    line-height: 1.2;
+}
+
+/* PARAGRAPHS */
+
+p {
+    margin: .5em 0;
+    max-width: 38em;
+}
+
+/* HELPER CLASSES */
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* LAYOUT */
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    /* TABLET-SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%;
+        /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%;
+        /* 18px */
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* SEMANTIC GRID SYSTEM */
+
+/* SECTIONS */
+
+section {
+    padding: 10em 0;
+}
+
+/* SITE HEADER */
+.site-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    color: white;
+}
+
+.site-header,
+.site-footer {
+    padding: 1.5em 1em 1em 1em;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-id {
+    display: flex;
+    justify-content: center;
+}
+
+.site-id .logo-kcc {
+    max-width: 35px;
+    margin-right: .5em;
+    margin-bottom: .75em;
+}
+
+.site-id .logo-nma {
+    max-width: 100px;
+    margin-right: .5em;
+    margin-bottom: .75em;
+}
+
+.site-id h1 {
+    font-size: 1.5em;
+    max-width: 100%;
+    margin-top: .55em;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.site-id h1 a {
+    text-decoration: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* NAVIGATION */
+
+@media (max-width:767px) {
+    .site-footer ul {
+        /* display: block; */
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.site-footer a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* COMING SOON */
+
+
+/* HERO */
+.hero {
+    padding: 6em 4%;
+    /* background-color: rgb(65, 77, 77); */
+    text-align: center;
+    /* background-color: hsla(331, 73%, 65%, 1);
+    background-image:
+        radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 71% 56%, hsla(357, 79%, 72%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(355, 72%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 1%, hsla(340, 75%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 38% 48%, hsla(41, 100%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 51% 64%, hsla(60, 65%, 62%, 1) 0px, transparent 50%); */
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-bottom: 6em;
+}
+
+.hero .coming-soon {
+    display: block;
+    width: 70vw;
+    /* height: 500px; */
+    height: 70vh;
+    object-fit: contain;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 10vw;
+}
+
+.hero p {
+    max-width: 400px;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em 1.5em;
+    text-align: right;
+    width: 100%;
+}
+
+.socialmedia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 767px) {
+    .socialmedia {
+        text-align: center;
+    }
+
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 .3em;
+}
+
+.fab {
+    color: white;
+    /* font-size: clamp(2em 1.5vw); */
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.fa-facebook-f:hover {
+    color: #1877F2;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-youtube:hover {
+    color: #CD201F;
+}
