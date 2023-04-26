@@ -35,6 +35,8 @@ A working repo for the NMA 2023 Student Show
    -needs a roof + added floor 
 * [UI Website Test 05](https://newmediaarts.github.io/2023studentshow/ui-website-test05) 
    -OMG the backup
+* [UI Website Test 06](https://newmediaarts.github.io/2023studentshow/ui-website-test06) 
+   - Maria adding the portfolio links 
 
 ## Instructions
 * Git clone this repo to work on it locally
