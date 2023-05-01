@@ -498,6 +498,18 @@ iframe {
   color: hsla(173, 68%, 70%, 1);
 }
 
+span.kanalu {
+  border: 5px solid green;
+  font-size: .5em;
+}
+
+@media (min-width: 768px) {
+  .kanalu {
+    border: 5px solid orange;
+    font-size: .2em;
+  }
+}
+
 .student-name {
   display: flex;
   justify-content: center;
