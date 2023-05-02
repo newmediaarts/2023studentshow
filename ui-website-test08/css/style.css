@@ -390,7 +390,36 @@ iframe {
 .student-names a:linked {
     color: #069;
 }
+/* BUTTONS */
+.button,
+button {
+  font-size: 1em;
+  display: inline-block;
+  background-color: #333333;
+  color: white;
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center; }
 
+.button:hover,
+button:hover {
+  background-color: white;
+  color: #333333;
+  text-decoration: none;
+  border: 1px solid #333333; }
+
+.button.alt {
+  border: 1px solid #333;
+  background-color: transparent;
+  color: #333333; }
+
+.button.alt:hover {
+  background-color: #333333;
+  color: white;
+  border: 1px solid white; }
 /* SOCIAL MEDIA ICONS */
 .social-icons {
     /* position: absolute;
@@ -627,6 +656,11 @@ iframe {
 span.kanalu {
     /* border: 5px solid green; */
     font-size: .9em;
+}
+
+h3.kanalu2 {
+    font-size: .5vh;
+    border: 3px solid red;
 }
 
 @media (min-width: 768px) {
