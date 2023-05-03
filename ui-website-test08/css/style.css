@@ -670,12 +670,12 @@ span.kanalu {
     hyphens: auto;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     span.kanalu {
-        /* border: 5px solid orange; */
-        /* font-size: 1em; */
+        border: 5px solid orange;
+        font-size: 1em;
     }
-}
+} */
 
 @media (min-width: 768px) {
     .student-name {
