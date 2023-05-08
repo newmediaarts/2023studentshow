@@ -44,7 +44,13 @@ body {
 .avant {
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-size: .7em;
+    margin-right: -.05em;
     /* border: 5px solid red; */
+}
+
+.avant span {
+
+    margin-right: -.05em;
 }
 
 /* HEADINGS
@@ -402,6 +408,10 @@ iframe {
     color: #069;
 }
 
+.student-names span {
+    margin-right: .5em;
+}
+
 /* BUTTONS */
 .button,
 button {
@@ -485,118 +495,6 @@ button:hover {
 
 .fa-youtube:hover {
     color: #CD201F;
-}
-
-.room-container {
-    transform-style: preserve-3d;
-}
-
-.student-room {
-    position: relative;
-    border-top: 4vh solid hsl(0 0% 10%);
-    border-bottom: 4vh solid hsl(0 0% 10%);
-    height: 100vh;
-    width: 100vw;
-    /* scroll-snap-align: center; */
-    transform-style: preserve-3d;
-    /* overflow-y: hidden; */
-}
-
-.student-room+.student-room {
-    border-top: 0;
-}
-
-.student-room::before,
-.student-room::after {
-    content: '';
-    position: absolute;
-    height: var(--roomdepth);
-    width: 100%;
-    backface-visibility: hidden;
-}
-
-.student-room::before {
-    background:
-        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-        lightgray;
-    transform: rotatex(-90deg) scale(1.001);
-    transform-origin: center top;
-}
-
-/* FLOOR */
-.student-room::after {
-    bottom: 0;
-    background:
-        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-        url(../img/megan-illustrated-floor.jpg) center / cover,
-        sandybrown;
-    transform: rotatex(90deg);
-    transform-origin: center bottom;
-}
-
-/* CENTER WALL */
-.student-room-walls {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
-        radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
-        /* 		url(https://picsum.photos/1024/400) center / cover, */
-        darkgray;
-    transform: translatez(calc(var(--roomdepth) * -1));
-    transform-style: preserve-3d;
-}
-
-.student-room-walls::before,
-.student-room-walls::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: var(--roomdepth);
-}
-
-/* LEFT WALL */
-.student-room-walls::before {
-    right: 100%;
-    background:
-        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
-        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-        /* 		url(https://picsum.photos/800/600) center / cover, */
-        gray;
-    transform: rotatey(90deg);
-    transform-origin: right center;
-}
-
-/* RIGHT WALL */
-.student-room-walls::after {
-    left: 100%;
-    background:
-        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
-        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
-        /* 		url(https://picsum.photos/600/800) center / cover, */
-        gray;
-    transform: rotatey(-90deg);
-    transform-origin: left center;
-}
-
-.student-room-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    color: white;
-    /* 	font-size: clamp(1em, 20vmin, 8em); */
-    font-weight: 200;
-    text-align: center;
-    text-shadow: 0 5px 10px hsl(0 0% 0% / 20%);
-    /* 	transform: translatez(calc(var(--roomdepth) / -2)) rotatey(var(--turn)); */
-}
-
-.student-room:nth-child(odd)>.room-content {
-    --turn: var(--turnLeft);
 }
 
 #orion,
@@ -786,6 +684,7 @@ span.kanalu {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: .08em;
+    padding-top: .5em;
 }
 
 .student-links-wrapper {
@@ -827,7 +726,7 @@ span.kanalu {
     padding: 0 0 6em 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .project-grid img,
