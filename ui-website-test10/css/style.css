@@ -821,6 +821,7 @@ span.kanalu {
 
 .student-name h3 {
     font-size: 5.5vh;
+    font-size: clamp(3em, 5.5vh, 5.5vh);
 
 }
 
