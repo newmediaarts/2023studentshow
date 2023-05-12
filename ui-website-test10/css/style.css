@@ -247,9 +247,6 @@ iframe {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 768px) {
-    /* TABLET-SIZED STYLING GOES HERE */
-}
 
 @media (min-width: 1050px) {
     body {
@@ -567,42 +564,24 @@ span.kanalu {
 
 .student-room.last-room::after {
     background: hsl(0 0% 10%);
-
-    #about.last-room {
-        min-height: 100vh;
-        display: block;
-    }
-
-    /* CENTER WALL */
-    .student-room-walls {
-        position: absolute;
-        inset: 0;
-        background:
-            linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
-            radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
-            /* 		url(https://picsum.photos/1024/400) center / cover, */
-            darkgray;
-        transform: translatez(calc(var(--roomdepth) * -1));
-        transform-style: preserve-3d;
-    }
 }
 
-@media (max-width: 767px) {
-    .student-room {
-        border-top: none;
-    }
+#about.last-room {
+    min-height: 100vh;
+    display: block;
+}
 
-    .student-room-walls {
-        transform: translatez(0);
-        background: rgba(0, 0, 0, .1);
-    }
-
-    .student-room-walls::before,
-    .student-room-walls::after,
-    .student-room::before,
-    .student-room::after {
-        display: none;
-    }
+/* CENTER WALL */
+.student-room-walls {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
+        /* 		url(https://picsum.photos/1024/400) center / cover, */
+        darkgray;
+    transform: translatez(calc(var(--roomdepth) * -1));
+    transform-style: preserve-3d;
 }
 
 .student-room-walls::before,
@@ -674,8 +653,8 @@ span.kanalu {
 }
 
 .student-name h3 {
-    font-size: 5.5vw;
-    font-size: clamp(3em, 5.5vw, 5.5vw);
+    font-size: 5.5em;
+
 }
 
 @media (min-width: 768px) {
@@ -690,7 +669,7 @@ span.kanalu {
     border-radius: 100%;
     bottom: 0;
     left: 50%;
-    max-width: 250px;
+    max-width: 150px;
     margin: 0 auto;
     transform: translate(-50%, 50%);
     border: var(--borderwidth) solid rgb(252, 250, 250);
@@ -732,6 +711,7 @@ span.kanalu {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
     grid-template-rows: 10% 10% 35% 25% 20%;
 }
 
