@@ -233,6 +233,11 @@ iframe {
     height: 100%;
 }
 
+#practicumfilm {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 
 /* LAYOUT */
 
