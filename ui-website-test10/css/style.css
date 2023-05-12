@@ -222,11 +222,16 @@ iframe {
     visibility: hidden;
 }
 
+.video {
+    /* max-height: 100vh; */
+    margin: 0 auto;
+    /* border: 10px solid red; */
+}
+
 /* VIDEO WRAPPER */
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 */
     height: 0;
 }
 
@@ -236,46 +241,6 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-/* VIDEO SECTION */
-#video {
-    background-color: hsl(0 0% 10%);
-    margin-top: 2vh;
-}
-
-.video {
-    /* max-width: 1400px; */
-    padding: 5vh 5vw;
-    /* position: relative; */
-    /* margin: -35vh auto 0 auto; */
-}
-
-@media (min-width: 768px) {
-    .video {
-        margin: calc(-100vh + 20vw) auto 0 auto;
-    }
-
-    #video {
-        margin-top: 10vh;
-    }
-}
-
-.video::before {
-    content: "";
-    /* background: black; */
-    /* position: absolute; */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* z-index: -30; */
-}
-
-.videoWrapper {
-    /* position: relative; */
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 
@@ -585,19 +550,13 @@ span.kanalu {
 
 .student-room {
     padding: 20vh 0;
-    /* position: relative; */
     border-top: 4vh solid hsl(0 0% 10%);
-    /* border-bottom: 4vh solid hsl(0 0% 10%); */
     min-height: 100vh;
     max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* place-items: center; */
-    /* scroll-snap-align: center; */
     transform-style: preserve-3d;
-    /* overflow-y: hidden; */
-    /* border: 50px solid green; */
 }
 
 .student-room+.student-room {
@@ -682,6 +641,24 @@ span.kanalu {
         darkgray;
     transform: translatez(calc(var(--roomdepth) * -1));
     transform-style: preserve-3d;
+}
+
+@media (max-width: 767px) {
+    .student-room {
+        border-top: none;
+    }
+
+    .student-room-walls {
+        transform: translatez(0);
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .student-room-walls::before,
+    .student-room-walls::after,
+    .student-room::before,
+    .student-room::after {
+        display: none;
+    }
 }
 
 .student-room-walls::before,
@@ -820,9 +797,8 @@ span.kanalu {
 }
 
 .student-name h3 {
-    font-size: 5.5vh;
-    font-size: clamp(3em, 5.5vh, 5.5vh);
-
+    font-size: 5.5vw;
+    font-size: clamp(3em, 5.5vw, 5.5vw);
 }
 
 @media (min-width: 768px) {
