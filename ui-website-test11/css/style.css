@@ -517,6 +517,10 @@ button:hover {
     hyphens: auto;
 }
 
+/* .avatar .kanalu:hover {
+    background: url(img/kanalu02.jpg) no-repeat;
+} */
+
 .student-names h2,
 .student-names p {
     text-align: center;
@@ -776,7 +780,7 @@ span.kanalu {
 }
 
 .student-project-wrap {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
