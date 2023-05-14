@@ -601,6 +601,25 @@ span.kanalu {
     hyphens: auto;
 }
 
+.student-name {
+    position: relative;
+    padding-bottom: 90px;
+    width: 100%;
+}
+
+.student-name h3 {
+    font-size: 5.5em;
+    font-size: clamp(2.4em, 5.5vw, 5.5vw);
+
+}
+
+@media (min-width: 768px) {
+    .student-name {
+        padding-bottom: 50px;
+    }
+}
+
+
 .videobtn a {
     display: block;
     display: inline-block;
@@ -745,24 +764,6 @@ span.kanalu {
 .student-img-work img {
     max-width: 100%;
     height: auto;
-}
-
-.student-name {
-    position: relative;
-    padding-bottom: 90px;
-    width: 100%;
-}
-
-.student-name h3 {
-    font-size: 5.5em;
-    font-size: clamp(3em, 5.5vw, 5.5vw);
-
-}
-
-@media (min-width: 768px) {
-    .student-name {
-        padding-bottom: 50px;
-    }
 }
 
 .avatar {
