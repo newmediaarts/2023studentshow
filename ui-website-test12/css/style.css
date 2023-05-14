@@ -1,7 +1,8 @@
 /* CSS VARIABLES */
 :root {
-    --borderwidth: 7px;
-    --roomdepth: 400px;
+    --borderwidth: calc(.2vw + .2vh);
+    /* --borderwidth: 7px; */
+    --roomdepth: 500px;
 }
 
 /* GLOBAL RESET */
@@ -44,12 +45,6 @@ body {
 
 .avant {
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-size: .7em;
-    margin-right: -.05em;
-}
-
-.avant span {
-    margin-right: -.05em;
 }
 
 /* HEADINGS
@@ -310,10 +305,26 @@ iframe {
     position: relative;
     width: 100%;
     padding: 10em 0;
-    /* background: red; */
-    /* background-color: teal; */
-    /* background-color: hsl(0 0% 10%);
-    z-index: 100; */
+    text-align: center;
+}
+
+#graduates h2 {
+    border-bottom: 1px solid hsla(173, 68%, 70%, 1);
+    display: inline-block;
+    font-size: 4em;
+    font-size: clamp(2em, 4vw, 4em);
+}
+
+#graduates .avant {
+    font-size: .7em;
+}
+
+#graduates .year {
+    background: hsl(0 0% 10%);
+    display: inline-block;
+    top: .15em;
+    position: relative;
+    padding: 0 .3em;
 }
 
 .studentlist {
@@ -536,16 +547,15 @@ button:hover {
 }
 
 @media (max-width: 767px) {
-    .kanalu {
+    /* .kanalu {
         font-size: 1em;
-        font-size: 2.5vw;
-        /* font-size: clamp(2.2em, 2.9vw, 2.9vw); */
+        font-size: 2.5vw; */
+    /* font-size: clamp(2.2em, 2.9vw, 2.9vw); */
+
+    .kanalu .hide-name {
+        display: none;
     }
 }
-
-/* .avatar .kanalu:hover {
-    background: url(img/kanalu02.jpg) no-repeat;
-} */
 
 .student-names h2,
 .student-names p {
@@ -579,7 +589,7 @@ button:hover {
     color: #069;
 }
 
-.student-names span {
+.student-names p span {
     margin-right: .5em;
 }
 
@@ -791,6 +801,10 @@ span.kanalu {
 }
 
 .avatar {
+    display: block;
+}
+
+.avatarwrapper {
     position: absolute;
     display: block;
     border-radius: 100%;
@@ -800,7 +814,86 @@ span.kanalu {
     margin: 0 auto;
     transform: translate(-50%, 50%);
     border: var(--borderwidth) solid rgb(252, 250, 250);
+    overflow: hidden;
+
 }
+
+@media (max-width: 768px) {
+    .avatarwrapper {
+        max-width: 100px;
+    }
+}
+
+.avatarwrapper::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.avatarwrapper:hover::after {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#orion .avatarwrapper:hover::after {
+    background-image: url(../img/orion02.jpg);
+}
+
+#yuma .avatarwrapper:hover::after {
+    background-image: url(../img/yuma02.jpg);
+}
+
+#kimi .avatarwrapper:hover::after {
+    background-image: url(../img/kimi02.jpg);
+}
+
+#selena .avatarwrapper:hover::after {
+    background-image: url(../img/selena02.jpg);
+}
+
+#kaleb .avatarwrapper:hover::after {
+    background-image: url(../img/kaleb02.jpg);
+}
+
+#cass .avatarwrapper:hover::after {
+    background-image: url(../img/cass2.jpg);
+}
+
+#kanalu .avatarwrapper:hover::after {
+    background-image: url(../img/kanalu02.jpg);
+}
+
+#troy .avatarwrapper:hover::after {
+    background-image: url(../img/troy02.jpg);
+}
+
+#maria .avatarwrapper:hover::after {
+    background-image: url(../img/orion02.jpg);
+}
+
+#vinsent .avatarwrapper:hover::after {
+    background-image: url(../img/vinsent02.jpg);
+}
+
+#hiroaki .avatarwrapper:hover::after {
+    background-image: url(../img/hiroaki02.jpg);
+}
+
+#mikaela .avatarwrapper:hover::after {
+    background-image: url(../img/mikaela02.jpg);
+}
+
+#tre .avatarwrapper:hover::after {
+    background-image: url(../img/tre02.jpg);
+}
+
+#jenny .avatarwrapper:hover::after {
+    background-image: url(../img/jenny02.jpg);
+}
+
 
 .student-links-wrapper {
     margin-bottom: 1em;
@@ -845,8 +938,8 @@ span.kanalu {
 .project-grid img,
 .project-grid video {
     display: block;
-    border: var(--borderwidth) solid rgb(252, 250, 250);
-    box-shadow: inset 0 0 0px 1px rgba(252, 250, 250, 0);
+    border: var(--borderwidth) solid rgb(250, 250, 250);
+    box-shadow: inset 0 0 0px 1px rgba(250, 250, 250, 1);
     background-color: var(--color-body-backround);
 }
 
@@ -854,7 +947,7 @@ span.kanalu {
 .project-grid .noborder video {
     display: block;
     border: none;
-    box-shadow: inset 0 0 0px 0 rgb(252, 250, 250);
+    box-shadow: inset 0 0 0px 0 rgb(250, 250, 250);
     background-color: transparent;
 }
 
