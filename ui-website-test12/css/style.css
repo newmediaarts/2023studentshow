@@ -639,6 +639,10 @@ span.kanalu {
     margin-right: 1em;
 }
 
+.videobtn.pTop {
+    padding-top: 1em;
+}
+
 .room-container {
     transform-style: preserve-3d;
 }
@@ -699,6 +703,12 @@ span.kanalu {
 #about.last-room {
     min-height: 100vh;
     display: block;
+}
+
+#about {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 /* CENTER WALL */
@@ -871,7 +881,7 @@ span.kanalu {
 }
 
 #maria .avatarwrapper:hover::after {
-    background-image: url(../img/orion02.jpg);
+    background-image: url(../img/maria02.jpg);
 }
 
 #vinsent .avatarwrapper:hover::after {
