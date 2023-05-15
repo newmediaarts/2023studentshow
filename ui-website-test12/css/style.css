@@ -705,6 +705,12 @@ span.kanalu {
     display: block;
 }
 
+@media (min-width: 768px) {
+    #about .container {
+        padding: 2em 0;
+    }
+}
+
 #about {
     display: inline-block;
     display: flex;
