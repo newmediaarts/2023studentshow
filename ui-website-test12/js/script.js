@@ -30,6 +30,8 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     //
 }); Fancybox.bind('[data-fancybox="video-gallery"]', {
     //
+}); Fancybox.bind('[data-fancybox="video-gallery-watch"]', {
+    //
 }); Fancybox.defaults.Hash = false;
 
 const options = {

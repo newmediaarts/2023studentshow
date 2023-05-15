@@ -425,6 +425,10 @@ button:hover {
     border: 1px solid white;
 }
 
+.custom-btn {
+    margin: 2em;
+}
+
 /* SOCIAL MEDIA ICONS */
 .social-icons {
     padding: 1em 1.5em;
