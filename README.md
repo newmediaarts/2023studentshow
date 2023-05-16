@@ -49,6 +49,8 @@ A working repo for the NMA 2023 Student Show
    -progress
 * [UI Website Test 12](https://newmediaarts.github.io/2023studentshow/ui-website-test12) 
    -Bug fixing with Chris
+* [UI Website Test 13](https://newmediaarts.github.io/2023studentshow/ui-website-test13) 
+   -Chris's 11th Hour Adjustments (fix buttons, column spacing, etc)
 
 
 ## Instructions
