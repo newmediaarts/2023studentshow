@@ -475,6 +475,17 @@ button:hover {
     text-decoration: none;
 }
 
+.fab.icon span {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.fab.icon:hover  {
+    text-decoration: none;
+}
+
 .fa-facebook-f:hover {
     color: #1877F2;
 }
@@ -942,6 +953,7 @@ span.kanalu {
 #jenny .avatarwrapper:hover::after {
     background-image: url(../img/jenny02.jpg);
 }
+
 
 
 .student-links-wrapper {
