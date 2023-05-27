@@ -55,6 +55,8 @@ A working repo for the NMA 2023 Student Show
    -Reoptimized all images and videos, last minute bug fixes, copy changes
 * [UI Website Test 15](https://newmediaarts.github.io/2023studentshow/ui-website-test15) 
    -edit animation blurb
+* [UI Website Test 16](https://newmediaarts.github.io/2023studentshow/ui-website-test16) 
+   -typos
 
 
 ## Instructions
